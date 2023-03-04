@@ -1,0 +1,45 @@
+version: "3.5"
+services:
+  mysqlservice:
+    image: mysql:5.5
+    
+    container_name: mysql-container
+    network_mode: host
+    hostname: localhost
+    environment:
+      MYSQL_ROOT_PASSWORD: P.0bulesh
+      MYSQL_USERNAME: root
+      MYSQL_PASSWORD: P.0bulesh
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+
+  mongodbservice:
+    image: mongo:latest
+    container_name: mongo-container
+    network_mode: host
+    hostname: localhost
+
+
+  musix_register_login:
+    container_name: musix-register-login
+    build: Musix_Register_Login/
+    hostname: localhost
+    network_mode: host
+    
+    depends_on:
+      - mysqlservice
+      
+    restart: always
+
+  musix_favourite_recommend:
+    container_name: musix-favourite-recommend
+    build: Musix_Favourite_Recommend/
+    hostname: localhost
+    network_mode: host
+    
+    depends_on:
+      - mongodbservice
+     
+    restart: always
+    
+  
+   

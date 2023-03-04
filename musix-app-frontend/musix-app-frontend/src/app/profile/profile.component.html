@@ -1,0 +1,45 @@
+<div class="whole">
+    <div class="center">
+        <h1> Update Details </h1>
+        <form method="post" class="register-form">
+          <div class="txt_field">
+            <input type="text" required formControlName="firstName" >
+            <span></span>
+            <label>First Name</label>
+        </div>
+        <div class="txt_field">
+          <input type="text" required formControlName="userId">
+          <span></span>
+          <label>Last Name</label>
+      </div>
+            <div class="txt_field">
+                
+                <!-- <input type="text" required formControlName="userId" [(ngModel)]="users.userId" readonly="readonly" > -->
+                <span></span>
+                <!-- <label>User Id</label> -->
+                <p>User Id</p>
+                
+            </div>
+            <div class="txt_field">
+              <input type="email" required formControlName="email" >
+              <span></span>
+              <label>Email</label>
+          </div>
+            <div class="txt_field">
+                <input type="" required formControlName="password" >
+                <span></span>
+                <label>Password</label>
+            </div>
+            <div class="three">
+                <!-- <button class="buttoni">Clear</button> -->
+                <!-- <input type="submit" value="Update" [disabled]='registerForm.invalid'> -->
+                <!-- <input type="submit" value="Cancle" [disabled]='registerForm.invalid'> -->
+                <a id="three"><input type="submit" value="Save"  ></a>
+                <!-- <label for="" class="">Update</label> -->
+                <a routerLink="/" id="three"><input type="submit" value="Home" style="margin-left:10px;"></a>
+            </div>
+            
+        </form>
+        <span>.</span>
+    </div>
+    </div>

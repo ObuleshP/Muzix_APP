@@ -1,0 +1,10 @@
+com\example\demo\MusixAppBackendApplication.class
+com\example\demo\controller\FavouriteController.class
+com\example\demo\controller\CounterRecommendController.class
+com\example\demo\repository\FavouriteRepository.class
+com\example\demo\repository\RecommendRepository.class
+com\example\demo\model\Favourite.class
+com\example\demo\model\Recommendwithcounter.class
+com\example\demo\model\Recommend.class
+com\example\demo\controller\RecommendController.class
+com\example\demo\repository\CounterRecommendRepository.class
